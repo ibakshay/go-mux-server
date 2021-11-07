@@ -1,0 +1,18 @@
+### GET all books
+GET http://localhost:8000/api/books
+
+### GET a book based on ID
+GET http://localhost:8000/api/books/1
+
+### post a new book
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+  "isbn": "1987654",
+  "title": "Das Leben",
+  "author": {
+    "first_name" : "Balasundaram",
+    "last_name": "Iyyadurai"
+  }
+}
